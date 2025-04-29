@@ -1,35 +1,10 @@
-# ChatJob助手 Android IOS 客户端
+# ChatBot助手 Flutter(Android\iOS)客户端
 > Dify支持发送图片交互。可以添加多个小智到聊天列表，需要连接虾哥官方的需要先有注册过的设备MAC地址。
 
-一个基于WebSocket的Android语音对话应用,支持实时语音交互和文字对话。
-基于Flutter框架开发的小智AI助手，支持多平台（iOS、Android、Web、Windows、macOS、Linux）部署，提供实时语音交互和文字对话功能。
-
-<table>
-  <tr>
-    <td align="center" valign="bottom" height="500">
-      <table>
-        <tr>
-          <td align="center">
-            <a href="https://www.bilibili.com/video/BV1fgXvYqE61" target="_blank">
-              <img src="2345.jpg" alt="新版"  width="200" height="430"/>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td align="center">
-            <small>
-  新版IOS、安卓端（可以自行打包WEB、PC版本)<br>
-  <a href="https://www.bilibili.com/video/BV1fgXvYqE61" style="color: red; text-decoration: none;">观看demo视频点击跳转</a>
-</small>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+一个基于WebSocket的语音对话应用,支持实时语音交互和文字对话。
+基于Flutter框架开发的ChatBot助手，支持多平台（iOS、Android、Web、Windows、macOS、Linux）部署，提供实时语音交互和文字对话功能。
 
 ## 功能特点
-
 - **跨平台支持**：使用Flutter框架，一套代码支持多平台
 - **多AI模型支持**：
   - 集成小智AI服务（WebSocket实时语音对话）
@@ -64,10 +39,6 @@
 ## 安装与构建
 
 1. 克隆项目:
-```bash
-git clone https://github.com/TOM88812/xiaozhi-android-client.git
-```
-
 2. 安装依赖:
 ```bash
 flutter pub get
@@ -107,28 +78,3 @@ IOS编译完后，需要在设置-APP中打开网络权限
 - 支持配置多个Dify服务
 - API密钥管理
 - 服务器URL配置
-
-
-## 开发计划
-- [ ] 深色/浅色主题适配
-- [x] 支持更多AI服务提供商
-- [x] 增强语音识别准确性
-- [x] 支持OTA自动注册设备
-- [ ] 支持Iot映射手机操作
-- [ ] 支持本地asr语音识别
-- [ ] 支持本地唤醒词
-- [ ] 支持TTS
-- [ ] 支持MCP_Client
-- [ ] 支持OpenAI接口联网搜索🔍
-
-
-## 🌟支持
-
-您的每一个start⭐或赞赏💖，都是我们不断前进的动力🛸。
-<div style="display: flex;">
-<img src="zsm.jpg" width="260" height="280" alt="赞助" style="border-radius: 12px;" />
-</div>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=TOM88812/xiaozhi-android-client&type=Date)](https://star-history.com/#TOM88812/xiaozhi-android-client&Date)
