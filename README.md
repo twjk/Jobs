@@ -1,4 +1,4 @@
-# ChatBot助手 Flutter(Android\iOS)客户端
+# ChatBot助手 Flutter版
 > Dify支持发送图片交互。可以添加多个小智到聊天列表，需要连接虾哥官方的需要先有注册过的设备MAC地址。
 
 一个基于WebSocket的语音对话应用,支持实时语音交互和文字对话。

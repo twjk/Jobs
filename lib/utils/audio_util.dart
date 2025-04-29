@@ -136,7 +136,6 @@ class AudioUtil {
     await stopPlaying();
 
     try {
-      print('$TAG: 配置音频会话为播放模式');
       final session = await AudioSession.instance;
       if (Platform.isIOS) {
         final iosOptions =
