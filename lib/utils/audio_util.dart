@@ -170,13 +170,13 @@ class AudioUtil {
         await session.setActive(true);
       }
 
-      print('$TAG: 使用简单方式初始化PCM播放器');
+      //print('$TAG: 使用简单方式初始化PCM播放器');
       _pcmPlayer = FlutterPcmPlayer();
       await _pcmPlayer!.initialize();
       await _pcmPlayer!.play();
 
       _isPlayerInitialized = true;
-      print('$TAG: PCM播放器初始化成功');
+      //print('$TAG: PCM播放器初始化成功');
     } catch (e) {
       print('$TAG: PCM播放器初始化失败: $e');
       _isPlayerInitialized = false;
@@ -189,7 +189,7 @@ class AudioUtil {
         _isPlayerInitialized = true;
         print('$TAG: 使用默认配置初始化成功');
       } catch (retryError) {
-        print('$TAG: 使用默认配置初始化也失败: $retryError');
+        //print('$TAG: 使用默认配置初始化也失败: $retryError');
         _isPlayerInitialized = false;
       }
     }
@@ -198,16 +198,16 @@ class AudioUtil {
   /// 播放Opus音频数据
   static Future<void> playOpusData(Uint8List opusData) async {
     try {
-      print('$TAG: playOpusData called, data length: ${opusData.length}');
+      //print('$TAG: playOpusData called, data length: ${opusData.length}');
       // 如果播放器未初始化，先初始化
       if (!_isPlayerInitialized || _pcmPlayer == null) {
-        print('$TAG: 播放器未初始化，重新初始化');
+        //print('$TAG: 播放器未初始化，重新初始化');
         await initPlayer();
       }
 
       // 解码Opus数据
       final Int16List pcmData = _decoder.decode(input: opusData);
-      print('$TAG: 解码后PCM长度: ${pcmData.length}');
+      //print('$TAG: 解码后PCM长度: ${pcmData.length}');
 
       // 准备PCM数据（按照示例直接方式）
       final Uint8List pcmBytes = Uint8List(pcmData.length * 2);
@@ -221,7 +221,7 @@ class AudioUtil {
       // 直接发送到播放器
       if (_pcmPlayer != null) {
         await _pcmPlayer!.feed(pcmBytes);
-        print('$TAG: PCM数据已送入播放器');
+        //print('$TAG: PCM数据已送入播放器');
       } else {
         print('$TAG: _pcmPlayer为null，无法播放');
       }

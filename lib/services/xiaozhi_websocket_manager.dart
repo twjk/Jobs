@@ -448,7 +448,7 @@ class XiaozhiWebSocketManager {
 
       try {
         final pingMessage = {'type': 'ping'};
-        print('$TAG: 发送ping消息');
+        //print('$TAG: 发送ping消息');
         _channel?.sink.add(json.encode(pingMessage));
       } catch (e) {
         print('$TAG: 发送ping消息失败: $e');
